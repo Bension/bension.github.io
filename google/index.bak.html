@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Easy Learn Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">rugben MarkDown Record</h1>
+      <h2 class="project-tagline">make you in my code</h2>
+    </section>
+
+    <section class="main-content">
+     <h2>Centos安装GITLAB</h2> 
+  <pre><code> 
+    安装文件： <a href="https://downloads-packages.s3.amazonaws.com/centos-6.6/gitlab-ce-7.10.0~omnibus.2-1.x86_64.rpm">gitlab-ce-7.10.0~omnibus.2-1.x86_64.rpm</a> 
+    安装说明： <a href="https://doc.gitlab.cc/omnibus/" target="_blank">https://doc.gitlab.cc/omnibus/</a>
+    配置说明： <a href="https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/configuration.md" target="_blank">settings/configuration.md</a>
+    配置文件：/etc/gitlab/gitlab.rb
+    生效配置：gitlab-ctl reconfigure
+    重启服务：gitlab-ctl restart
+    首次登录：user=root password=5iveL!fe
+  </pre></code>
+  <h4>MYSQL最简集合</h4>
+  <pre><code>
+    //不需要任何参数可执行
+    SHOW DATABASES;                 --查看所有库
+    SHOW TABLES;                    --查看所有表
+    SELECT USER();                  --查看当前用户
+    SELECT DATABASE();              --查看当前库
+
+    //需要用户指定相关参数
+    SHOW COLUMNS FROM 表名;         --查看指定表结构
+    DESCRIBE 表名;                  --查看指定表结构
+    SELECT * FROM 表名 LIMIT 1 \G;  --查记录纵向显示
+
+    //结果中增加ID列(取第二个结果集)
+    select @i := -1; select @i := @i + 1 as id,a.* from A a;
+   </pre></code>
+
+      <footer class="site-footer">
+
+        <span class="site-footer-credits" >This page was generated base <a href="https://github.com/Bension/bension.github.io">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
